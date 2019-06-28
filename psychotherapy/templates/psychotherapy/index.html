@@ -1,0 +1,36 @@
+{% include 'psychotherapy/parts/header.html' %}
+
+<body id="page-top">
+
+    {% load static %} {% include 'psychotherapy/parts/navbar.html' %}
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="d-flex h-100 align-items-center">
+            <img src="{% static '/img/nonny2.jpg' %}" class="box-shadowing cd-imagetop" alt="Nonny">
+            <div class="mx-auto text-center">
+                <div class="text-white">
+                    <h2 class="mx-auto mb-4">Behöver du prata?</h2>
+                    <p>Känner du att du under en kortare eller längre tid har “mått dåligt”?</p>
+                    <p>Känner du att du har fastnat i ett känslo-, tanke- eller beteendemönster som du inte trivs med?</p>
+                    <p>Upplever du att dina relationer inte fungerar som du skulle önska?</p>
+                    <p>Psykodynamisk samtalsterapi kan vara vägen till en mer konstruktiv och välfungerande tillvaro.</p>
+                </div>
+
+                <!-- V1.0
+                <p class="text-white mx-auto "><img src="/static/img/nonny.jpg " class="box-shadowing " alt="Nonny ">Hejsan</p>
+                <h2 class="text-white mx-auto mt-3 mb-4 ">Behöver du prata?</h2>
+                <p class="text-white mx-auto ">Känner du att du under en kortare eller längre tid har “mått dåligt”?</p>
+                <p class="text-white mx-auto ">Känner du att du har fastnat i ett känslo-, tanke- eller beteendemönster som du inte trivs med?</p>
+                <p class="text-white mx-auto ">Upplever du att dina relationer inte fungerar som du skulle önska?</p>
+                <p class="text-white mx-auto mb-5 ">Psykodynamisk samtalsterapi kan vara vägen till en mer konstruktiv och välfungerande tillvaro.</p>
+                <!-- <a href="{% url 'getstarted' %}" class="btn btn-primary js-scroll-trigger ">Jag är intresserad!</a> -->
+            </div>
+        </div>
+    </header>
+
+    {% include 'psychotherapy/parts/footer.html' %}
+
+</body>
+
+</html>
