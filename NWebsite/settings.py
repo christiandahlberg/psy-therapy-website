@@ -34,7 +34,7 @@ SECRET_KEY = get_env_variable('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://nonnywebs.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
