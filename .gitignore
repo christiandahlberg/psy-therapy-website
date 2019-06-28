@@ -114,3 +114,9 @@ dmypy.json
 
 # Custom programs
 secret_settings.py
+
+# Text backup files
+*.bak
+
+# Database
+*.sqlite3
