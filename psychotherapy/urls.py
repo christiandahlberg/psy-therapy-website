@@ -3,8 +3,6 @@ from . import views
 
 urlpatterns = [
     # ex: /psychotherapy/
-    path(r'^$', views.index),
-
     path('', views.index, name='index'),
 
     # ex: /psychotherapy/therapy/
