@@ -29,7 +29,7 @@ SECRET_KEY = get_env_variable('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['nonnywebs.herokuapp.com', 'nonnywebs.pythonanywhere.com', '127.0.0.1']
 
