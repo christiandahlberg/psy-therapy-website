@@ -123,9 +123,46 @@
     float: left;
 }
 
+.img-float-right {
+    float: right;
+}
+
 .box-shadowing {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+/*
+Test
+*/
+
+#container {
+    width: 100%;
+}
+
+#one {
+    width: 50%;
+    float: left;
+}
+
+#two {
+    width: 50%;
+    float: right;
+}
+
+@media all and (max-width:800px) {
+    #one,
+    #two {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+
+/*
+end test
+*/
 
 .masthead {
     position: relative;

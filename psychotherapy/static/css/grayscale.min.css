@@ -99,6 +99,11 @@
     float: left;
 }
 
+.img-float-right {
+    float: right;
+    margin-left: 50px;
+}
+
 .cd-p {
     width: 70%;
     float: left;
@@ -130,6 +135,39 @@
 .text-just {
     text-align: justify;
 }
+
+
+/*
+Test
+*/
+
+#container {
+    width: 100%;
+}
+
+#one {
+    width: 50%;
+    float: left;
+}
+
+#two {
+    width: 50%;
+    float: right;
+}
+
+@media all and (max-width:800px) {
+    #one,
+    #two {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+
+/*
+end test
+*/
 
 .masthead {
     position: relative;
