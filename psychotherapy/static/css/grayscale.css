@@ -8,8 +8,8 @@ nav.navbar img {
     border-radius: 50%;
     width: 100px;
     position: absolute;
-    top: 10px;
-    left: 40px;
+    top: 30px;
+    left: 30px;
 }
 
 #mainNav {
@@ -402,5 +402,5 @@ footer {
 }
 
 nav.navbar {
-    padding: .5rem 10rem;
+    padding: .25rem 5rem;
 }
