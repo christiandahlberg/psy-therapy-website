@@ -407,6 +407,10 @@ footer {
     }
 }
 
+.text-alignment {
+    margin: auto;
+}
+
 nav.navbar {
     padding: .25rem 5rem;
 }
