@@ -7,7 +7,6 @@
 nav.navbar img {
     border-radius: 50%;
     width: 100px;
-    height: 120px;
     position: absolute;
     top: 10px;
     left: 40px;
@@ -81,7 +80,6 @@ nav.navbar img {
     #mainNav.navbar-shrink .nav-link {
         color: #161616;
         padding: 2rem 1.5rem;
-        border-bottom: 0.25rem solid transparent;
     }
     #mainNav.navbar-shrink .nav-link:hover {
         color: #64a19d;
@@ -92,7 +90,6 @@ nav.navbar img {
     #mainNav.navbar-shrink .nav-link.active {
         color: #64a19d;
         outline: none;
-        border-bottom: 0.25rem solid #64a19d;
     }
 }
 
