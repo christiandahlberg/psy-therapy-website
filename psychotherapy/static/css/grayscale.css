@@ -4,6 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+nav.navbar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
 #mainNav {
     min-height: 56px;
     background-color: #fff;
@@ -379,4 +388,22 @@ a:hover {
 
 footer {
     padding: 5rem 0;
+}
+
+@media screen and (max-width: 992px) {
+    nav.navbar img {
+        display: none;
+    }
+    .profile-picture {
+        display: block;
+        text-align: center;
+    }
+}
+
+.profile-picture {
+    display: none;
+}
+
+nav.navbar {
+    padding: .5rem 10rem;
 }
