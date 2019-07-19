@@ -170,6 +170,11 @@ Test
     }
 }
 
+a[href^=tel] {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 
 /*
 end test
