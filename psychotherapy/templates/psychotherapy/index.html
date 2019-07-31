@@ -9,13 +9,12 @@
         <div class="d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
                 <div id="container">
+                    {% if front_page %}
                     <div class="text-white">
-                        <h2 class="mx-auto mb-4">Behöver du prata?</h2>
-                        <p>Har du under en kortare eller längre tid känt dig i psykisk obalans?</p>
-                        <p>Känner du att du har fastnat i ett känslo-, tanke- eller beteendemönster som du inte trivs med?</p>
-                        <p>Upplever du att dina relationer inte fungerar som du skulle önska?</p>
-                        <p>Psykodynamisk samtalsterapi kan vara vägen till en mer konstruktiv och välfungerande tillvaro.</p>
+                        <h2 class="mx-auto mb-4">{{ front_page.title }}</h2>
+                        <h6 class="text-white mx-auto mt-2 mb-4">{{ front_page.body|linebreaks }}</h6>
                     </div>
+                    {% endif %}
                 </div>
 
             </div>

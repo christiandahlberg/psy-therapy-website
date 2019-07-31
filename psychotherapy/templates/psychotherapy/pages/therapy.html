@@ -6,20 +6,13 @@
     <!-- Therapy -->
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
+            {% if about_page %}
             <div class="mx-auto text-center">
                 <i class="far fa-comments fa-2x mb-3 text-white"></i>
-                <h3 class="text-white mx-auto text-center mb-4">Om psykodynamisk psykoterapi</h3>
-                <h6 class="text-white mx-auto mt-2 mb-4 text-just">De allra flesta söker sig till psykoterapi eftersom de uppvisar psykiska symtom. Det kan till exempel handla om ångestproblematik, oro, frustration, sömnbesvär. En viktig utgångspunkt inom psykodynamisk terapi är att det finns en mening
-                    med psykiska symtom, och att de är möjliga att förstå.<br><br> Psykiska symtom uppstår som en följd av att vi, ofta på ett omedvetet plan, försöker hantera och lösa motstridiga och problematiska relationer och inre konflikter. Målet
-                    i psykodynamisk psykoterapi är främst att förstå och bearbeta de inre konflikter som ligger till grund för symtomen. Därigenom kan man komma fram till ett mer konstruktivt sätt att förhålla sig till andra människor och livssituationer.
-                    Psykodynamisk terapi kallas därför även för insiktsterapi.<br><br> Man arbetar både ”här och nu” och ”där och då”. Relationer, upplevelser och minnen från den tidiga livshistorien hjälper till att tolka och förstå livet här och nu,
-                    med allt vad det innebär av relationer, känslor och livsmönster. Man kan säga att man använder ”då” för att bättre förstå och förändra ”nu”.<br><br> Som i de flesta terapiformer lägger man stor vikt vid en god och förtroendefull samarbetsrelation
-                    mellan klient och terapeut. I den psykodynamiska terapin utgår man dessutom från att klienten i relationen till sin terapeut kommer att spegla och upprepa de relationsmönster hon/han har med sig sedan tidigare. Genom att bli medveten
-                    om dessa mönster blir de möjliga att förstå och känna igen, och det blir då lättare att förändra dem till mer ändamålsenliga livsmönster.<br><br> Det finns två nivåer inom psykodynamisk terapi: samtalsterapi och psykoterapi. Skillnaden
-                    är att samtalsterapeuten har en 2-årig utbildning medan psykoterapeuten även har en 3-årig legitimerande påbyggnadsutbildning. Som samtalsterapeut går man i handledning hos en legitimerad psykoterapeut/ handledare. Jag erbjuder samtalsterapi,
-                    vilket innebär en lägre taxa.
-                    </h5>
+                <h3 class="text-white mx-auto text-center mb-4">{{ about_page.title }}</h3>
+                <h6 class="text-white mx-auto mt-2 mb-4 text-just">{{ about_page.body|linebreaks }}</h6>
             </div>
+            {% endif %}
         </div>
     </header>
 
