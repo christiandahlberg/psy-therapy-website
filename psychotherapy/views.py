@@ -2,13 +2,13 @@ from django.shortcuts import render
 from .models import Prices, About, Frontpage
 
 
-#ABOUT_PAGE = About.objects.all()
-#PRICES_PAGE = Prices.objects.all()
-#FRONT_PAGE = Frontpage.objects.all()
+ABOUT_PAGE = About.objects.all()
+PRICES_PAGE = Prices.objects.all()
+FRONT_PAGE = Frontpage.objects.filter()[:1].get()
 
 def index(request):
     """ Home """
-    return render(request, 'psychotherapy/index.html')
+    return render(request, 'psychotherapy/index.html', {"front_page": FRONT_PAGE})
 
 def therapy(request):
     """ Shows information regarding this specific sort of therapy."""
