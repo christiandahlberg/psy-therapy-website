@@ -9,12 +9,12 @@
         <div class="d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
                 <div id="container">
-                    {% if front_page %}
+                    {% for frontpage in front_page %}
                     <div class="text-white">
                         <h2 class="mx-auto mb-4">{{ front_page.title }}</h2>
                         <h6 class="text-white mx-auto mt-2 mb-4">{{ front_page.body|linebreaks }}</h6>
                     </div>
-                    {% endif %}
+                    {% endfor %}
                 </div>
 
             </div>

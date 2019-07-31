@@ -6,13 +6,13 @@
     <!-- Therapy -->
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
-            {% if about_page %}
+            {% for about in about_page %}
             <div class="mx-auto text-center">
                 <i class="far fa-comments fa-2x mb-3 text-white"></i>
                 <h3 class="text-white mx-auto text-center mb-4">{{ about_page.title }}</h3>
                 <h6 class="text-white mx-auto mt-2 mb-4 text-just">{{ about_page.body|linebreaks }}</h6>
             </div>
-            {% endif %}
+            {% endfor %}
         </div>
     </header>
 

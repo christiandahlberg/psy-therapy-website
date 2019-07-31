@@ -2,9 +2,9 @@ from django.shortcuts import render
 from .models import Prices, About, Frontpage
 
 
-ABOUT_PAGE = About.objects.filter()[:1].get()
-PRICES_PAGE = Prices.objects.filter()[:1].get()
-FRONT_PAGE = Frontpage.objects.filter()[:1].get()
+ABOUT_PAGE = About.objects.all()
+PRICES_PAGE = Prices.objects.all()
+FRONT_PAGE = Frontpage.objects.all()
 
 def index(request):
     """ Home """
